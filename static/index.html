@@ -5,59 +5,91 @@
 	<title>HCI Project Portfolio</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<!-- this is a comment in HTML -->
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-    <![endif]-->
+		<script src="js/jquery-3.3.1.slim.min.js"></script>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/my-css.css">
 </head>
 
 <body>
-	<div>
-		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
-		<!-- p means paragraph -->
-		<div>
-			<h1>Ted Schelble</h1>
-			<p>programming &middot; data science &middot; educational tech</p>
-		</div>
 
+	<div class="container-fluid">
+	  <div class="px-lg-5">
+	    <div class="row py-5">
+	      <div class="col-lg-12 mx-auto">
+	        <div class="text-white p-5 shadow-sm rounded banner">
+	          <h1 class="display-4">Ted Schelble</h1>
+						<p class="lead">programming &middot; data science &middot; educational tech</p>
+	          <p class="lead">Latest Projects</p>
+	        </div>
+	      </div>
+	    </div>
 
-		<h4>Projects</h4>
-		<!-- divs are invisible structuring elements that stack vertically by default. Use them to organize your code -->
-		<!-- img tags are images. Lorem Pixel will deliver random images; handy! -->
-		<!-- a are anchors, also known as hyperlinks. Use the href attribute to tell the browser where to go when the user clicks -->
-		<div id="project1">
-			<a href="http://afruitfulday.com">
-				<img src="images/cool_pineapple.png" alt="Fruitful">
-				<p>Rewarding To-Do List</p>
-			</a>
-		</div>
-		<div id="project2">
-			<a href="https://github.com/tschelbs18/210habit">
-				<img src="images/habit_tracker.jpg" alt="Habits">
-				<p>Open Source Activity Tracker</p>
-			</a>
-		</div>
-		<div id="project3">
-			<a href="https://getprofesh.com">
-				<img src="images/P logo.jpg" alt="Profesh">
-				<p>Small Business Recruiting</p>
-			</a>
-		</div>
-		<div id="project4">
-			<a href="https://github.com/tschelbs18/OLD_sudoku_solver">
-				<img src="images/sudoku.png" alt="Sudoku">
-				<p>Open Source Python Sudoku Solver</p>
-			</a>
-		</div>
-		<div id="project5">
-			<a href="https://www.linkedin.com/in/ted-schelble-8517b185/">
-				<img src="images/linkedin.jpg" alt="LinkedIn">
-				<p>LinkedIn</p>
-			</a>
-		</div>
+	    <div class="row">
+	      <!-- Gallery item -->
+	      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+	        <div class="bg-white rounded shadow-sm"><img src="images/cool_pineapple.png" alt="Fruitful" class="img-fluid card-img-top">
+	          <div class="p-4">
+	            <h5> <a href="http://www.afruitfulday.com" class="text-dark">Fruitful</a></h5>
+	            <p class="small text-muted mb-0">A live, rewarding productivity application</p>
+	            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+	              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+	              <div class="badge badge-danger px-3 rounded-pill font-weight-normal">Latest</div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- End -->
+
+	      <!-- Gallery item -->
+	      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+	        <div class="bg-white rounded shadow-sm"><img src="images/habit_tracker.jpg" alt="Habits" class="img-fluid card-img-top">
+	          <div class="p-4">
+	            <h5> <a href="https://github.com/tschelbs18/210habit" class="text-dark">Habit Tracker</a></h5>
+	            <p class="small text-muted mb-0">An open-source repository for a habit tracking web application</p>
+	            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+	              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+	              <div class="badge badge-success px-3 rounded-pill font-weight-normal">Open Source</div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- End -->
+
+	      <!-- Gallery item -->
+	      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+	        <div class="bg-white rounded shadow-sm"><img src="images/P logo.jpg" alt="Profesh" class="img-fluid card-img-top">
+	          <div class="p-4">
+	            <h5> <a href="https://www.getprofesh.com" class="text-dark">Profesh</a></h5>
+	            <p class="small text-muted mb-0">A startup for more effective matching of qualified candidates to positions at small businesses</p>
+	            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+	              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">JPG</span></p>
+	              <div class="badge badge-primary px-3 rounded-pill font-weight-normal text-white">Start-up</div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- End -->
+
+	      <!-- Gallery item -->
+	      <div class="col-xl-3 col-lg-4 col-md-6 mb-4">
+	        <div class="bg-white rounded shadow-sm"><img src="images/sudoku.png" alt="Sudoku" class="img-fluid card-img-top">
+	          <div class="p-4">
+	            <h5> <a href="https://github.com/tschelbs18/OLD_sudoku_solver" class="text-dark">Sudoku Solver</a></h5>
+	            <p class="small text-muted mb-0">An open source repository of python code for an automated sudoku solver working on difficulties up to evil</p>
+	            <div class="d-flex align-items-center justify-content-between rounded-pill bg-light px-3 py-2 mt-4">
+	              <p class="small mb-0"><i class="fa fa-picture-o mr-2"></i><span class="font-weight-bold">PNG</span></p>
+	              <div class="badge badge-success px-3 rounded-pill font-weight-normal">Open Source</div>
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <!-- End -->
+
+	    </div>
+	    <div class="py-5 text-right"><a href="https://www.linkedin.com/in/ted-schelble-8517b185/" class="btn btn-dark px-5 py-3 text-uppercase">Visit my LinkedIn</a></div>
+	  </div>
 	</div>
 </body>
 </html>
